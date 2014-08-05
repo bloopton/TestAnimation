@@ -20,7 +20,7 @@ int main()
      */
     sf::RectangleShape titlescreen (sf::Vector2f(screenDimensions.x, screenDimensions.y));
     sf::Texture title;
-    if (!title.loadFromFile("/Users/warrenpennington/Desktop/Programs/TestAnimation/TestAnimation/Rainsford Titlescreen.png"))
+    if (!title.loadFromFile("/Users/Bloopton/Desktop/Programs/TestAnimation/TestAnimation/Rainsford Titlescreen.png"))
     {
         std::cout << "Failed to load player spritesheet!" << std::endl;
         return 1;
@@ -28,10 +28,37 @@ int main()
     titlescreen.setTexture(&title); // texture is a sf::Texture
     titlescreen.setTextureRect(sf::IntRect(0, 0, 576,272));
 
+    
+    
+    sf::RectangleShape titleback (sf::Vector2f(screenDimensions.x, screenDimensions.y));
+    sf::Texture titlebackTex;
+    if (!titlebackTex.loadFromFile("/Users/Bloopton/Desktop/Programs/TestAnimation/TestAnimation/Titleback.png"))
+    {
+        std::cout << "Failed to load player spritesheet!" << std::endl;
+        return 1;
+    }
+    titleback.setTexture(&titlebackTex); // texture is a sf::Texture
+    titleback.setTextureRect(sf::IntRect(0, 0, 576,272));
+    
+    
+    
+    sf::RectangleShape moon (sf::Vector2f(screenDimensions.x, screenDimensions.y));
+    sf::Texture moonT;
+    if (!moonT.loadFromFile("/Users/Bloopton/Desktop/Programs/TestAnimation/TestAnimation/Moon.png"))
+    {
+        std::cout << "Failed to load player spritesheet!" << std::endl;
+        return 1;
+    }
+    moon.setTexture(&moonT); // texture is a sf::Texture
+    moon.setTextureRect(sf::IntRect(0, 0, 576,272));
+
+    
+    
+
     //back1
     sf::RectangleShape back1(sf::Vector2f(72,34));
     sf::Texture textureBack1;
-    if (!textureBack1.loadFromFile("/Users/warrenpennington/Desktop/Programs/TestAnimation/TestAnimation/Background1.png"))
+    if (!textureBack1.loadFromFile("/Users/Bloopton/Desktop/Programs/TestAnimation/TestAnimation/Background1.png"))
     {
         std::cout << "Failed to load player spritesheet!" << std::endl;
         return 1;
@@ -42,7 +69,7 @@ int main()
     //back2
     sf::RectangleShape back2(sf::Vector2f(128,32));
     sf::Texture textureBack2;
-    if (!textureBack2.loadFromFile("/Users/warrenpennington/Desktop/Programs/TestAnimation/TestAnimation/Background2.png"))
+    if (!textureBack2.loadFromFile("/Users/Bloopton/Desktop/Programs/TestAnimation/TestAnimation/Background2.png"))
     {
         std::cout << "Failed to load player spritesheet!" << std::endl;
         return 1;
@@ -63,7 +90,7 @@ int main()
     //back3
     sf::RectangleShape back3(sf::Vector2f(128,32));
     sf::Texture textureBack3;
-    if (!textureBack3.loadFromFile("/Users/warrenpennington/Desktop/Programs/TestAnimation/TestAnimation/Background3.png"))
+    if (!textureBack3.loadFromFile("/Users/Bloopton/Desktop/Programs/TestAnimation/TestAnimation/Background3.png"))
     {
         std::cout << "Failed to load player spritesheet!" << std::endl;
         return 1;
@@ -84,7 +111,7 @@ int main()
     //back4
     sf::RectangleShape back4(sf::Vector2f(112,32));
     sf::Texture textureBack4;
-    if (!textureBack4.loadFromFile("/Users/warrenpennington/Desktop/Programs/TestAnimation/TestAnimation/Background4.png"))
+    if (!textureBack4.loadFromFile("/Users/Bloopton/Desktop/Programs/TestAnimation/TestAnimation/Background4.png"))
     {
         std::cout << "Failed to load player spritesheet!" << std::endl;
         return 1;
@@ -105,7 +132,7 @@ int main()
     //back5
     sf::RectangleShape back5(sf::Vector2f(96,32));
     sf::Texture textureBack5;
-    if (!textureBack5.loadFromFile("/Users/warrenpennington/Desktop/Programs/TestAnimation/TestAnimation/Background5.png"))
+    if (!textureBack5.loadFromFile("/Users/Bloopton/Desktop/Programs/TestAnimation/TestAnimation/Background5.png"))
     {
         std::cout << "Failed to load player spritesheet!" << std::endl;
         return 1;
@@ -126,7 +153,7 @@ int main()
     //back6
     sf::RectangleShape back6(sf::Vector2f(72,32));
     sf::Texture textureBack6;
-    if (!textureBack6.loadFromFile("/Users/warrenpennington/Desktop/Programs/TestAnimation/TestAnimation/Background6.png"))
+    if (!textureBack6.loadFromFile("/Users/Bloopton/Desktop/Programs/TestAnimation/TestAnimation/Background6.png"))
     {
         std::cout << "Failed to load player spritesheet!" << std::endl;
         return 1;
@@ -147,7 +174,7 @@ int main()
     //moonlight
     sf::RectangleShape moonlight(sf::Vector2f(96,32));
     sf::Texture textureMoon;
-    if (!textureMoon.loadFromFile("/Users/warrenpennington/Desktop/Programs/TestAnimation/TestAnimation/Moonlight.png"))
+    if (!textureMoon.loadFromFile("/Users/Bloopton/Desktop/Programs/TestAnimation/TestAnimation/Moonlight.png"))
     {
         std::cout << "Failed to load player spritesheet!" << std::endl;
         return 1;
@@ -169,7 +196,7 @@ int main()
     //vines
     sf::RectangleShape vines(sf::Vector2f(96,32));
     sf::Texture textureVines;
-    if (!textureVines.loadFromFile("/Users/warrenpennington/Desktop/Programs/TestAnimation/TestAnimation/Vines.png"))
+    if (!textureVines.loadFromFile("/Users/Bloopton/Desktop/Programs/TestAnimation/TestAnimation/Vines.png"))
     {
         std::cout << "Failed to load player spritesheet!" << std::endl;
         return 1;
@@ -216,7 +243,7 @@ int main()
     //flickering stormlamp spritesheet
     sf::Texture stormLamp;
     
-    if (!stormLamp.loadFromFile("/Users/warrenpennington/Desktop/Programs/TestAnimation/TestAnimation/RainsfordStormLamp_Spritesheet.png"))
+    if (!stormLamp.loadFromFile("/Users/Bloopton/Desktop/Programs/TestAnimation/TestAnimation/RainsfordStormLamp_Spritesheet.png"))
     {
         std::cout << "Failed to load player spritesheet!" << std::endl;
         return 1;
@@ -237,7 +264,7 @@ int main()
     //IVAN STUFF
     // load texture (spritesheet)
     sf::Texture textureIvan;
-    if (!textureIvan.loadFromFile("/Users/warrenpennington/Desktop/Programs/TestAnimation/TestAnimation/Spritesheet_Ivan.png"))
+    if (!textureIvan.loadFromFile("/Users/Bloopton/Desktop/Programs/TestAnimation/TestAnimation/Spritesheet_Ivan.png"))
     {
         std::cout << "Failed to load player spritesheet!" << std::endl;
         return 1;
@@ -290,7 +317,7 @@ int main()
     
     // DOG load texture (spritesheet)
     sf::Texture textureDog;
-    if (!textureDog.loadFromFile("/Users/warrenpennington/Desktop/Programs/TestAnimation/TestAnimation/Spritesheet_Dog.png"))
+    if (!textureDog.loadFromFile("/Users/Bloopton/Desktop/Programs/TestAnimation/TestAnimation/Spritesheet_Dog.png"))
     {
         std::cout << "Failed to load player spritesheet!" << std::endl;
         return 1;
@@ -349,7 +376,7 @@ int main()
     
     // load texture (spritesheet)
     sf::Texture texture;
-    if (!texture.loadFromFile("/Users/warrenpennington/Desktop/Programs/TestAnimation/TestAnimation/Spritesheet_Rainsford.png"))
+    if (!texture.loadFromFile("/Users/Bloopton/Desktop/Programs/TestAnimation/TestAnimation/Spritesheet_Rainsford.png"))
     {
         std::cout << "Failed to load player spritesheet!" << std::endl;
         return 1;
@@ -901,7 +928,6 @@ int main()
         back5b.move(.55*movement.x * timeMov, 0);
         vinesb.move(.65*movement.x * timeMov, 0);
         back6b.move(.8*movement.x * timeMov, 0);
-        
         noKeyWasPressed = true;
 
         
@@ -914,14 +940,16 @@ int main()
         
         // draw
         window.clear();
-        window.draw(back1);
+        window.draw(titleback);
+        window.draw(moon);
+        //window.draw(back1);
         window.draw(back2);
         window.draw(back2a);
         window.draw(back2b);
         window.draw(back3);
         window.draw(back3a);
         window.draw(back3b);
-        window.draw(back4);
+        /*window.draw(back4);
         window.draw(back4a);
         window.draw(back4b);
         window.draw(back5);
@@ -933,7 +961,10 @@ int main()
         window.draw(animatedSprite);
         window.draw(dog);//dog
         window.draw(ivan);//ivan
+         */
+        
         window.draw(titlescreen);
+        
         
         int flickerCounter = 0;
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::F))
