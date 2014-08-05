@@ -7,24 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		62A9A79E198771BB0046BDEE /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 62A9A79D198771BB0046BDEE /* ResourcePath.mm */; };
 		62A9A7A1198771BB0046BDEE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 62A9A7A0198771BB0046BDEE /* main.cpp */; };
 		62A9A7A4198771BB0046BDEE /* cute_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62A9A7A3198771BB0046BDEE /* cute_image.jpg */; };
 		62A9A7A6198771BB0046BDEE /* nice_music.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 62A9A7A5198771BB0046BDEE /* nice_music.ogg */; };
 		62A9A7A8198771BB0046BDEE /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 62A9A7A7198771BB0046BDEE /* sansation.ttf */; };
 		62A9A7AA198771BB0046BDEE /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 62A9A7A9198771BB0046BDEE /* icon.png */; };
+		62A9A7B2198772630046BDEE /* Animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 62A9A7B0198772630046BDEE /* Animation.cpp */; };
+		62A9A7B51987729C0046BDEE /* AnimatedSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 62A9A7B31987729C0046BDEE /* AnimatedSprite.cpp */; };
+		62A9A7B7198774660046BDEE /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = 62A9A7B6198774660046BDEE /* player.png */; };
+		C4F6098B198F629100508914 /* e6b44285c82cecc4.icns in Resources */ = {isa = PBXBuildFile; fileRef = C4F6098A198F629100508914 /* e6b44285c82cecc4.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		62A9A798198771BB0046BDEE /* TestAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62A9A79C198771BB0046BDEE /* TestAnimation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestAnimation-Info.plist"; sourceTree = "<group>"; };
-		62A9A79D198771BB0046BDEE /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
-		62A9A79F198771BB0046BDEE /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
 		62A9A7A0198771BB0046BDEE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		62A9A7A3198771BB0046BDEE /* cute_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cute_image.jpg; sourceTree = "<group>"; };
 		62A9A7A5198771BB0046BDEE /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = nice_music.ogg; sourceTree = "<group>"; };
 		62A9A7A7198771BB0046BDEE /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = "<group>"; };
 		62A9A7A9198771BB0046BDEE /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		62A9A7B0198772630046BDEE /* Animation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Animation.cpp; sourceTree = "<group>"; };
+		62A9A7B1198772630046BDEE /* Animation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Animation.hpp; sourceTree = "<group>"; };
+		62A9A7B31987729C0046BDEE /* AnimatedSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimatedSprite.cpp; sourceTree = "<group>"; };
+		62A9A7B41987729C0046BDEE /* AnimatedSprite.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AnimatedSprite.hpp; sourceTree = "<group>"; };
+		62A9A7B6198774660046BDEE /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
+		C4F6098A198F629100508914 /* e6b44285c82cecc4.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = e6b44285c82cecc4.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +48,7 @@
 		62A9A78E198771BB0046BDEE = {
 			isa = PBXGroup;
 			children = (
+				C4F6098A198F629100508914 /* e6b44285c82cecc4.icns */,
 				62A9A79A198771BB0046BDEE /* TestAnimation */,
 				62A9A799198771BB0046BDEE /* Products */,
 			);
@@ -57,9 +65,11 @@
 		62A9A79A198771BB0046BDEE /* TestAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				62A9A79D198771BB0046BDEE /* ResourcePath.mm */,
-				62A9A79F198771BB0046BDEE /* ResourcePath.hpp */,
 				62A9A7A0198771BB0046BDEE /* main.cpp */,
+				62A9A7B0198772630046BDEE /* Animation.cpp */,
+				62A9A7B31987729C0046BDEE /* AnimatedSprite.cpp */,
+				62A9A7B41987729C0046BDEE /* AnimatedSprite.hpp */,
+				62A9A7B1198772630046BDEE /* Animation.hpp */,
 				62A9A7A2198771BB0046BDEE /* Resources */,
 				62A9A79B198771BB0046BDEE /* Supporting Files */,
 			);
@@ -77,6 +87,7 @@
 		62A9A7A2198771BB0046BDEE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				62A9A7B6198774660046BDEE /* player.png */,
 				62A9A7A3198771BB0046BDEE /* cute_image.jpg */,
 				62A9A7A5198771BB0046BDEE /* nice_music.ogg */,
 				62A9A7A7198771BB0046BDEE /* sansation.ttf */,
@@ -138,6 +149,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				62A9A7AA198771BB0046BDEE /* icon.png in Resources */,
+				C4F6098B198F629100508914 /* e6b44285c82cecc4.icns in Resources */,
+				62A9A7B7198774660046BDEE /* player.png in Resources */,
 				62A9A7A8198771BB0046BDEE /* sansation.ttf in Resources */,
 				62A9A7A6198771BB0046BDEE /* nice_music.ogg in Resources */,
 				62A9A7A4198771BB0046BDEE /* cute_image.jpg in Resources */,
@@ -167,8 +180,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62A9A7B2198772630046BDEE /* Animation.cpp in Sources */,
+				62A9A7B51987729C0046BDEE /* AnimatedSprite.cpp in Sources */,
 				62A9A7A1198771BB0046BDEE /* main.cpp in Sources */,
-				62A9A79E198771BB0046BDEE /* ResourcePath.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,10 +192,13 @@
 		62A9A7AB198771BB0046BDEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					/Library/Frameworks/,
@@ -193,8 +210,11 @@
 					"$(inherited)",
 				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
@@ -204,7 +224,8 @@
 					/usr/local/lib/,
 					"$(inherited)",
 				);
-				ONLY_ACTIVE_ARCH = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"$(SFML_SYSTEM)",
@@ -232,10 +253,13 @@
 		62A9A7AC198771BB0046BDEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -243,8 +267,11 @@
 					"$(inherited)",
 				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
@@ -254,6 +281,7 @@
 					/usr/local/lib/,
 					"$(inherited)",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -282,16 +310,20 @@
 		62A9A7AE198771BB0046BDEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "TestAnimation/TestAnimation-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		62A9A7AF198771BB0046BDEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "TestAnimation/TestAnimation-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -314,6 +346,7 @@
 				62A9A7AF198771BB0046BDEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
